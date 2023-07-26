@@ -1,0 +1,97 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "tagsParam": {
+            "value": {
+                "application": "Micro Frontends",
+                "businessArea": "Core-Services",
+                "dataClassification": "Company Internal",
+                "environment": "BVT",
+                "version": "0.0.1"
+            }
+        },
+        "resourceGroupParam": {
+            "value": {
+                "name": "core-bvt-microfrontends-uks",
+                "location": "uksouth"
+            }
+        },
+        "logAnalyticsParam": {
+            "value": {
+                "name": "core-bvt-microfrontends-loganalytics-uks",
+                "retentionInDays": 30,
+                "dailyQuotaGb": 1
+            }
+        },
+        "applicationInsightsParam": {
+            "value": {
+                "name": "core-bvt-microfrontends-appinsights-uks"
+            }
+        },
+        "wafParam": {
+            "value": {
+                "name": "corebvtmicrofrontendswaf",
+                "frontDoorIds": {
+                    "low": "",
+                    "sfow": "",
+                    "osdow": "",
+                    "mfelhw": "",
+                    "omg": ""
+                },
+                "headerCheckRuleState": "Disabled"
+            }
+        },
+        "frontDoorParam": {
+            "value": {
+                "name": "core-bvt-microfrontends-frontdoor",
+                "customDomainName": "bvt-mfe.landmark.co.uk"
+            }
+        },
+        "staticSiteMappingParam": {
+            "value": {
+                "name": "core-bvt-mfe-mapping-static-website"
+            }
+        },
+        "staticSiteOmniboxParam": {
+            "value": {
+                "name": "core-bvt-mfe-omnibox-static-website"
+            }
+        },
+        "staticSiteTermsAndConditionsParam": {
+            "value": {
+                "name": "core-bvt-mfe-terms-and-conditions-static-website"
+            }
+        },
+        "staticSiteProductCategoriesParam": {
+            "value": {
+                "name": "core-bvt-mfe-product-categories-static-website"
+            }
+        },
+        "staticSiteProductDiscoveryParam": {
+            "value": {
+                "name": "core-bvt-mfe-product-discovery-static-website"
+            }
+        },
+        "staticSiteDashboardParam": {
+            "value": {
+                "name": "core-bvt-mfe-dashboard-static-website"
+            }
+        },
+        "staticSiteBasketParam": {
+            "value": {
+                "name": "core-bvt-mfe-basket-static-website"
+            }
+        },
+        "staticSitePropertyConfirmationWizardParam": {
+            "value": {
+                "name": "core-bvt-mfe-propertyconfirmationwizard-static-website"
+            }
+        },
+        "staticSiteContractPackVaultParam": {
+            "value": {
+                "name": "core-bvt-mfe-contractpackvault-static-website"
+            }
+        }
+    }
+}

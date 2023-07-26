@@ -1,0 +1,98 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "tagsParam": {
+            "value": {
+                "application": "Micro Frontends",
+                "businessArea": "Core-Services",
+                "dataClassification": "Company Internal",
+                "environment": "UAT",
+                "version": "0.0.1"
+            }
+        },
+        "resourceGroupParam": {
+            "value": {
+                "name": "core-uat-microfrontends-uks",
+                "location": "uksouth"
+            }
+        },
+        "logAnalyticsParam": {
+            "value": {
+                "name": "core-uat-microfrontends-loganalytics-uks",
+                "retentionInDays": 30,
+                "dailyQuotaGb": 1
+
+            }
+        },
+        "applicationInsightsParam": {
+            "value": {
+                "name": "core-uat-microfrontends-appinsights-uks"
+            }
+        },
+        "wafParam": {
+            "value": {
+                "name": "coreuatmicrofrontendswaf",
+                "frontDoorIds": {
+                    "low": "",
+                    "sfow": "",
+                    "osdow": "",
+                    "mfelhw": "",
+                    "omg": ""
+                },
+                "headerCheckRuleState": "Enabled"
+            }
+        },
+        "frontDoorParam": {
+            "value": {
+                "name": "core-uat-microfrontends-frontdoor",
+                "customDomainName": "uat-mfe.landmark.co.uk"
+            }
+        },
+        "staticSiteMappingParam": {
+            "value": {
+                "name": "core-uat-mfe-mapping-static-website"
+            }
+        },
+        "staticSiteOmniboxParam": {
+            "value": {
+                "name": "core-uat-mfe-omnibox-static-website"
+            }
+        },
+        "staticSiteTermsAndConditionsParam": {
+            "value": {
+                "name": "core-uat-mfe-terms-and-conditions-static-website"
+            }
+        },
+        "staticSiteProductCategoriesParam": {
+            "value": {
+                "name": "core-uat-mfe-product-categories-static-website"
+            }
+        },
+        "staticSiteProductDiscoveryParam": {
+            "value": {
+                "name": "core-uat-mfe-product-discovery-static-website"
+            }
+        },
+        "staticSiteDashboardParam": {
+            "value": {
+                "name": "core-uat-mfe-dashboard-static-website"
+            }
+        },
+        "staticSiteBasketParam": {
+            "value": {
+                "name": "core-uat-mfe-basket-static-website"
+            }
+        },
+        "staticSitePropertyConfirmationWizardParam": {
+            "value": {
+                "name": "core-uat-mfe-propertyconfirmationwizard-static-website"
+            }
+        },
+        "staticSiteContractPackVaultParam": {
+            "value": {
+                "name": "core-uat-mfe-contractpackvault-static-website"
+            }
+        }
+    }
+}
