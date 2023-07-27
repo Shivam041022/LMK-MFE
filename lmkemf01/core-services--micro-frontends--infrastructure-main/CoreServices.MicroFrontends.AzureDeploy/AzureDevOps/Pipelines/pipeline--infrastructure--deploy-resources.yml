@@ -6,7 +6,7 @@ trigger:
     - main
   paths:
     include:
-    - CoreServices.MicroFrontends.AzureDeploy/Bicep/*
+    - LMK-MFE/lmkemf01/CoreServices.MicroFrontends.AzureDeploy/Bicep/*
     
 variables:
 - template: ../Templates/Variables/variables--pipeline--global.yml
