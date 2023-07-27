@@ -9,19 +9,19 @@ trigger:
     - CoreServices.MicroFrontends.AzureDeploy/Bicep/*
     
 variables:
-- template: ../../Templates/Variables/variables--pipeline--global.yml
+- template: ../Templates/Variables/variables--pipeline--global.yml
 
 name: $(major).$(minor).$(patch)$(branch)
 
 stages:
 
 ### Publish artefacts.
-- template: ../../Templates/Stages/stage--shared--publish-artefacts.yml
+- template: ../Templates/Stages/stage--shared--publish-artefacts.yml
   parameters:
     name: Publish_Artefacts
     displayName: Publish Artefacts
     variables:
-    - template: ../../Variables/variables--infrastructure--global.yml
+    - template: ../Variables/variables--infrastructure--global.yml
 # #
 # ### Deploy to BVT.
 # - template: ../Templates/Stages/stage--infrastructure--deploy-to-environment.yml
