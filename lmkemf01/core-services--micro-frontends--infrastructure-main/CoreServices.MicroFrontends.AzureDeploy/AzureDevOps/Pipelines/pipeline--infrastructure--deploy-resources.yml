@@ -21,7 +21,7 @@ stages:
     name: Publish_Artefacts
     displayName: Publish Artefacts
     variables:
-    - template: ../Variables/variables--infrastructure--global.yml
+    - template: ../../Variables/variables--infrastructure--global.yml
 # #
 # ### Deploy to BVT.
 # - template: ../Templates/Stages/stage--infrastructure--deploy-to-environment.yml
