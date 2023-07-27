@@ -6,17 +6,17 @@ trigger:
     - main
   paths:
     include:
-    - LMK-MFE/lmkemf01/CoreServices.MicroFrontends.AzureDeploy/Bicep/*
+    - CoreServices.MicroFrontends.AzureDeploy/Bicep/*
     
 variables:
-- template: ../Templates/Variables/variables--pipeline--global.yml
+- template: ../../Templates/Variables/variables--pipeline--global.yml
 
 name: $(major).$(minor).$(patch)$(branch)
 
 stages:
 
 ### Publish artefacts.
-- template: ../Templates/Stages/stage--shared--publish-artefacts.yml
+- template: ../../Templates/Stages/stage--shared--publish-artefacts.yml
   parameters:
     name: Publish_Artefacts
     displayName: Publish Artefacts

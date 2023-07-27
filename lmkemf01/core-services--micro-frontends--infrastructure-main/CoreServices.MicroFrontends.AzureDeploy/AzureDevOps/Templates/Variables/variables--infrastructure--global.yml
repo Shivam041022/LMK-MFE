@@ -1,4 +1,4 @@
 variables:
-  bicepTemplatesSourceFolder: $(Build.Repository.LocalPath)/LMK-MFE/lmkemf01/CoreServices.MicroFrontends.AzureDeploy/Bicep
+  bicepTemplatesSourceFolder: $(Build.Repository.LocalPath)/CoreServices.MicroFrontends.AzureDeploy/Bicep
   parameters.tagsParam.value.version: $(Build.BuildNumber)
   LMK-MFE/lmkemf01/
