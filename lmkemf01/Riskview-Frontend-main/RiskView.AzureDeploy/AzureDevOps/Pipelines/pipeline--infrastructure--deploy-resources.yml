@@ -4,9 +4,9 @@ trigger:
   branches:
     include:
     - main
-  paths:
-    include:
-    - RiskView.AzureDeploy/Bicep/*
+  # paths:
+  #   include:
+  #   - RiskView.AzureDeploy/Bicep/*
     
 variables:
 - template: ../Templates/Variables/variables--pipeline--global.yml
