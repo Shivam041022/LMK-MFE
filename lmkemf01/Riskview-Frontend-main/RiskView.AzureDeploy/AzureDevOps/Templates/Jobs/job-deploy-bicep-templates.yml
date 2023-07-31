@@ -48,5 +48,5 @@ jobs:
             scriptType: bash
             scriptLocation: inlineScript
             inlineScript: |
-              az deployment sub create --location uksouth --template-file bicepTemplates/main.bicep --parameters bicepTemplates/Parameters/${{ variables.bicepParametersFile }}
+              az deployment sub create --location South India --template-file bicepTemplates/main.bicep --parameters bicepTemplates/Parameters/${{ variables.bicepParametersFile }}
             workingDirectory: $(Pipeline.Workspace)

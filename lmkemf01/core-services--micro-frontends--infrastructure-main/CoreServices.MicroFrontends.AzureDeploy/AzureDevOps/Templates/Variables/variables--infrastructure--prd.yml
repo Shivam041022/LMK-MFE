@@ -1,3 +1,0 @@
-variables:
-  serviceConnectionName: eng-coreservices-microfrontends-prd
-  bicepParametersFile: micro-frontends.parameters.prd.json

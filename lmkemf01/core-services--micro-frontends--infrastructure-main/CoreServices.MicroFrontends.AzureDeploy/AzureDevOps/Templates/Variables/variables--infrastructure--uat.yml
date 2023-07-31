@@ -1,3 +1,0 @@
-variables:
-  serviceConnectionName: eng-coreservices-microfrontends-uat
-  bicepParametersFile: micro-frontends.parameters.uat.json

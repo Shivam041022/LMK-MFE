@@ -1,0 +1,26 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "tagsParam": {
+            "value": {
+                "application": "Risk View",
+                "businessArea": "Core-Services",
+                "dataClassification": "Company Internal",
+                "environment": "BVT",
+                "version": "0.0.1"
+            }
+        },
+        "resourceGroupParam": {
+            "value": {
+                "name": "APIM-test-Rg",
+                "location": "South India"
+            }
+        },
+        "applicationInsightsParam": {
+            "value": {
+                "name": "test-ai"
+            }
+        }
+    }
+}
